@@ -11,7 +11,7 @@ class Plumb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/plumbkit/plumb/releases/download/v0.12.4/plumb_0.12.4_darwin_amd64.tar.gz"
-      sha256 "9913aae8f558f985c31b80fc9a536456beb6244f16b1511ae72aa6ec48176ae4"
+      sha256 "36f15d22185b2cb21f8b7085aec3d679a5f79cbffc68e3c8fd9ede6d39ecf446"
 
       define_method(:install) do
         bin.install "plumb"
@@ -19,7 +19,7 @@ class Plumb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/plumbkit/plumb/releases/download/v0.12.4/plumb_0.12.4_darwin_arm64.tar.gz"
-      sha256 "7d4f80a81445ad13f0635a5a0e66585f26915c903306ef1ce9075dcf37c17b34"
+      sha256 "66c269ba7b40d69293bcfa2007dcc3dfa25cabec2a5d2a85e0fca6dd968cd667"
 
       define_method(:install) do
         bin.install "plumb"
@@ -30,14 +30,14 @@ class Plumb < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/plumbkit/plumb/releases/download/v0.12.4/plumb_0.12.4_linux_amd64.tar.gz"
-      sha256 "98c81cc525984113d472a902c181b332d816c7a6f2f2c9f31f8c6ecc009499b4"
+      sha256 "61d2cc00e6b008f07a3281cccd5fa9cede4e1e74821951b16421b3c2720513a4"
       define_method(:install) do
         bin.install "plumb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/plumbkit/plumb/releases/download/v0.12.4/plumb_0.12.4_linux_arm64.tar.gz"
-      sha256 "39d3319c19b95a9a2c5475023f66d8928ea3fa815395f1fc83b03a90fd1c1833"
+      sha256 "564f98a2749c433f0c5039ca7b9bfc7a34f227831c740e57b390ad9867b6065c"
       define_method(:install) do
         bin.install "plumb"
       end
