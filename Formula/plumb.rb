@@ -5,21 +5,21 @@
 class Plumb < Formula
   desc "LSP-backed MCP server with crash-safe, concurrent writes for coding agents."
   homepage "https://github.com/plumbkit/plumb"
-  version "0.25.1"
+  version "0.26.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/plumbkit/plumb/releases/download/v0.25.1/plumb_0.25.1_darwin_amd64.tar.gz"
-      sha256 "2d1aca634d5f9a57f059392412fea28495748dcf476d302f1e9f42c6f605a780"
+      url "https://github.com/plumbkit/plumb/releases/download/v0.26.0/plumb_0.26.0_darwin_amd64.tar.gz"
+      sha256 "f1b696496d64c23e1a2351e0fde04729f1814867c8ee8f39da2dc8ff495bb151"
 
       define_method(:install) do
         bin.install "plumb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/plumbkit/plumb/releases/download/v0.25.1/plumb_0.25.1_darwin_arm64.tar.gz"
-      sha256 "d59df744c11a28e0ae499db57dff26dcf0d7223553fd4467229b19c3d165745b"
+      url "https://github.com/plumbkit/plumb/releases/download/v0.26.0/plumb_0.26.0_darwin_arm64.tar.gz"
+      sha256 "af2757f7f3ee70cc2d1cbf3d9402feff99d4e9f0fc162f2514a66c4b9b237919"
 
       define_method(:install) do
         bin.install "plumb"
@@ -29,15 +29,15 @@ class Plumb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plumbkit/plumb/releases/download/v0.25.1/plumb_0.25.1_linux_amd64.tar.gz"
-      sha256 "128c04820b9a9113272a68c8f92bae476905d629e04f2df246d664e4a538bbac"
+      url "https://github.com/plumbkit/plumb/releases/download/v0.26.0/plumb_0.26.0_linux_amd64.tar.gz"
+      sha256 "36fdcaa373f19952300f0cacbab6350c92ec26f8a1ed67a941faec0889354d08"
       define_method(:install) do
         bin.install "plumb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/plumbkit/plumb/releases/download/v0.25.1/plumb_0.25.1_linux_arm64.tar.gz"
-      sha256 "c8c53230438791d66659077ba8b32cd5d79a16970516cecfe41989d5989718f1"
+      url "https://github.com/plumbkit/plumb/releases/download/v0.26.0/plumb_0.26.0_linux_arm64.tar.gz"
+      sha256 "79bf198151e5f60eb787690f86dbe0e84c265fbfb6c50928a06cec2b2a7f33c0"
       define_method(:install) do
         bin.install "plumb"
       end
